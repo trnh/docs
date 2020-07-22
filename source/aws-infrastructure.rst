@@ -13,7 +13,8 @@ Once installed, `configure the tool <https://docs.aws.amazon.com/cli/latest/user
 
 All later steps will use these credentials.
 
-The final step of setup needed is to create a key which Terraform will use to communicate with the server to upload some configuration.
+The final step of setup needed is to create a key which Terraform will use to communicate with the server to upload some configuration. This key will also be used to login to your master node when the cluster setup is finished at the later stage.
+
 For now this must be created with no passphrase:
 
 .. code-block:: shell-session
