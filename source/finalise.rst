@@ -11,11 +11,13 @@ Setting service limits
 You can log into the management node at ``citc@mgmtipaddress``,
 using the IP address that terraform printed at the end of its run.
 
+You will need to use the private key that you setup in the previous section at ~/.ssh/aws-key to login to the management node.
+
 For example:
 
 .. code-block:: shell-session
 
-   $ ssh citc@130.61.43.69
+   $ ssh -i ~/.ssh/aws-key citc@130.61.43.69
 
 Once logged in, you can run the ``finish`` script:
 
@@ -41,6 +43,8 @@ Edit the file ``/home/citc/limits.yaml`` with:
 .. code-block:: shell-session
 
    [citc@mgmt ~]$ vim limits.yaml
+
+Note: The suggested syntax for YAML files is to use 2 spaces for indentation.
 
 Oracle
 ++++++
